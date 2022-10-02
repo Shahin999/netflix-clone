@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* img{
+    height: 20%;
+    width: 15%;
+} */
+body{
+     font-family: Arial, sans-serif;
+    background-color: black;
+    color: #999;
+}
+h1,h2,h3,h4{
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+    margin: 0.5rem 0;
+}
+img{
+    width: 100%;
+}
+.showcase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    /* background: url('../image/images.jpg') no-repeat center center/cover; */
+     background: url(./image/bg-img1.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+     background-position: center;
+}
+.showcase::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0 ,0.6);
+    box-shadow: inset 120px 100px 300px #000000, inset -120px -100px 300px #000000;
+}
+.showcase-top{
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+.showcase-top img{
+    width: 170px;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    transform: translate(-50% -50%);
+}
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin-right:20px ;
+}
+.showcase-content{
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+.showcase-content h1{
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.1rem;
+    margin:0 0 2rem;
+}
+.showcase-content p{
+text-transform: uppercase;
+font-weight: 400;
+font-size: 1.5rem;
+color: white;
+line-height: 1.25;
+margin: 0 0 2rem;
+}
+
+.btn{
+    display: inline-block;
+    background: red;
+    padding: 0.2rem 0.9rem;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+   
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn-rounded{
+    border-radius: 0.2rem;
+}
+.btn-xl{
+    font-size: 2rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+}
+/* tabs section */
+
+.tabs{
+    background-color: #141414;
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+.tabs>.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+.tabs p{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.tabs>.container > div{
+    padding: 1rem;
+}
+.tabs>.container > div:hover{
+    color: white;
+    cursor: pointer;
+}
+.tab-border{
+    border-bottom:2px solid red;
+}
