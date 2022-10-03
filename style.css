@@ -18,9 +18,8 @@ a{
     color: white;
     text-decoration: none;
 }
-p{
-    margin: 0.5rem 0;
-}
+ 
+
 img{
     width: 100%;
 }
@@ -144,4 +143,125 @@ margin: 0 0 2rem;
 }
 .tab-border{
     border-bottom:2px solid red;
+}
+
+/* section- tab-conten-1 */
+ .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap:2rem
+    
+}
+.text-lg{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.tab-content{
+    padding: 3rem 0;
+    color: white;
+}
+/* section- tab-conten-2 */
+
+.tab-2-content-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap:1rem;
+
+    
+}
+.tab-2-content-bottom{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap:2rem;
+}
+.text-md {
+	margin-bottom: 1rem;
+	font-size: 1rem;
+}
+.text-center {
+	text-align: center;
+}
+
+.text-dark {
+	color: #999;
+    font-size: .7rem;
+}
+
+/* table section */
+
+.table {
+	width: 100%;
+	margin-top: 2rem;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.table thead th {
+	text-transform: uppercase;
+	padding: 0.8rem;
+}
+
+.table tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.table tbody tr td {
+	color: #999;
+	padding: 0.8rem 1.2rem;
+	text-align: center;
+}
+
+.table tbody tr td:first-child {
+	text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+	background: #222;
+}
+
+/* footer section */
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+
+.footer,
+.footer a {
+	color: #999;
+	font-size: 0.9rem;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+.footer .lang-select {
+	margin-top: 2rem;
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
 }
