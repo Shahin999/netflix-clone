@@ -27,15 +27,15 @@
     <!-- section 2 -->
     <div class="tabs">
       <div class="container">
-        <div id="tab1" class="tab-item tab-border">
+        <div id="tab1" class="tab-item tab-border" onclick="enableView(1)">
           <i class="fas fa-door-open fa-3x"></i>
           <p class="hide-sm">Cancel Anytime</p>
         </div>
-        <div id="tab2" class="tab-item">
+        <div id="tab2" class="tab-item" onclick="enableView(2)">
             <i class="fa-solid fa-tablet fa-3x"></i>
           <p class="hide-sm">Watch Anywhere</p>
         </div>
-        <div id="tab2" class="tab-item">
+        <div id="tab3" class="tab-item" onclick="enableView(3)">
           <i class="fas fa-tags fa-3x"></i>
           <p class="hide-sm">Pick your price</p>
         </div>
@@ -43,10 +43,10 @@
     </div>
     <!-- tab section -->
         
-     <section class="tab-content">
+     <section >
       <div class="container">
        <!-- tab-content-1 -->
-        <!-- <div id="tab-1-content" class="tab-content-item show">
+        <div id="tab-1-content" class="tab-content-item show">
             <div class="tab-1-content-inner">
               <div>
                <p class="text-lg">
@@ -59,12 +59,12 @@
               </div>
               <img src="image/tab-content-1.png" alt="">
             </div>
-        </div> -->
+        </div>
 
            <!-- tab content - 2 -->
 
 
-        <!-- <div id="tab-2-content" class="tab-content-item">
+        <div id="tab-2-content" class="tab-content-item">
           <div class="tab-2-content-top">
             
             <p class="text-lg">
@@ -98,7 +98,7 @@
               </p>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <!-- tab content -3 -->
         <div id="table">
@@ -176,7 +176,7 @@
 
      <!-- footer section -->
      <footer class="footer">
-			<p>Questions? Call 1-866-579-7172</p>
+			<p >Questions? Call 1-866-579-7172</p>
 			<div class="footer-cols">
 				<ul>
 					<li><a href="#">FAQ</a></li>
@@ -207,6 +207,6 @@
 
 		</footer>
 
-
+    <script src="index.js"></script>
   </body>
 </html>
